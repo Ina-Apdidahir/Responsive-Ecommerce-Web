@@ -2,7 +2,10 @@
 
 export let Cart = JSON.parse(localStorage.getItem('Cart')) 
 if(!Cart){
-    Cart =  [{}]
+    Cart =  [{
+        productId: 'E_commerce_web_product_Id_Num_000151',
+        quantity : 1
+    }]
 }
 
 export function saveCarts() {
@@ -47,7 +50,7 @@ export function AddToCart(productId){
 export let Favorites = JSON.parse(localStorage.getItem("Favorites"))
 if (!Favorites){
     Favorites = [{
-        FavoriteId : 'E_commerce_web_product_Id_Num_00071',
+        FavoriteId : 'E_commerce_web_product_Id_Num_000151',
         quantity : 1
     }]
 }
